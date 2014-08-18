@@ -18,7 +18,8 @@ grails.project.fork = [
         // configure settings for the run-war JVM
         war: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256, forkReserve: false],
         // configure settings for the Console UI JVM
-        console: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256]
+        console: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256],
+
 ]
 
 grails.project.dependency.resolver = "maven" // or ivy
@@ -62,7 +63,6 @@ grails.project.dependency.resolution = {
         compile ':cache:1.1.1'
         compile ":spring-security-core:1.2.7.3"
         compile ":twitter-bootstrap:3.2.1"
-
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.7" // or ":hibernate4:4.1.11.6"
